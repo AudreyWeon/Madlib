@@ -1,0 +1,6 @@
+d:\Documents\Visual Studio 2017\Projects\Madlib\Madlib\bin\Debug\Madlib.exe.config
+d:\Documents\Visual Studio 2017\Projects\Madlib\Madlib\bin\Debug\Madlib.exe
+d:\Documents\Visual Studio 2017\Projects\Madlib\Madlib\bin\Debug\Madlib.pdb
+d:\Documents\Visual Studio 2017\Projects\Madlib\Madlib\obj\Debug\Madlib.csprojResolveAssemblyReference.cache
+d:\Documents\Visual Studio 2017\Projects\Madlib\Madlib\obj\Debug\Madlib.exe
+d:\Documents\Visual Studio 2017\Projects\Madlib\Madlib\obj\Debug\Madlib.pdb
