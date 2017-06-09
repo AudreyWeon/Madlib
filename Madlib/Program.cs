@@ -15,28 +15,24 @@ namespace Game
             "Bonnet",
             "Clogs",
             "Water",
-            "GoldenBall",
+            "Hand",
             "Air",
             "Bounded",
-            "Spring",
             "FineClothes",
-            "Jewels",
-            "Story"
+            "Jewels"
         };
 
-        static string[] Prompts = new string[]
-        {
+        static string[] Prompts = new string[] {
             "Noun",
             "Noun (Plural)",
             "Noun",
             "Noun",
             "Noun",
             "Verb",
-            "Noun",
             "Noun (Plural)",
             "Noun (Plural)",
-            "Noun"
         };
+
         static string Story;
         static string GameTitle;
 
@@ -74,7 +70,7 @@ namespace Game
 
         static void WriteStory()
         {
-            GameTitle = "The " + Words[1] + " " + Words[2] + " " + Words[0];
+            GameTitle = "The Frog Prince";
 
             TextInfo TitleCase = new CultureInfo("en-US", false).TextInfo;
             GameTitle = TitleCase.ToTitleCase(GameTitle);
@@ -84,8 +80,20 @@ namespace Game
 
             //write the story
 
-            Story = "One fine evening a young princess put on her {0}, and {1}, and went out to take a walk by herself in a wood; and when she came to a cool \nspring of {2}, that rose in the midst of it, she sat herself down to rest a while. Now she had a {3} in her hand, which was her \nfavorite plaything; and she was always tossing it up into the {4}, and catching it again as \nit fell. After a time she threw it up so high that she missed catching it as it fell; \nand the {5} {6} away, and rolled along upon the ground, till at last it fell down into the {7}. The princess \nlooked into the {8} after her {9}, but it was very deep, so deep that \nshe could not see the bottom of it. Then she began to bewail her loss, and said, 'Alas! If I \ncould only get my {10} again, I would give all my {11} and {12}, and everything that I have in the world.'";
-            Console.WriteLine(Story);
+            Story = "One fine evening a young princess put on her {0}, and {1}, and went out to take a walk by herself in a" +
+                " wood; and when she \ncame to a cool spring of {2}, that rose in the midst of it, she sat herself " +
+                "down to rest a while. Now she had a golden \nball in her {3}, which was her " +
+                "favorite plaything; and she was always tossing it up into the {4}, and " +
+                "catching it again as \nit fell. After a time she threw it up so high that she missed" +
+                " catching it as it fell; and the ball {5} away, and rolled \nalong upon the ground, " +
+                "till at last it fell down into the spring. The princess looked into the " +
+                "spring after her ball, \nbut it was very deep, so deep that she could not " +
+                "see the bottom of it. Then she began to bewail her loss, and said, \n'Alas! If I " +
+                "could only get my ball again, I would give all my {6} and {7}, and everything that" +
+                " I have in the world.'";
+            Console.WriteLine(Story, Words[0], Words[1], Words[2], Words[3], Words[4], 
+                Words[5], Words[6], Words[7]);
+
         }
         static void End()
         { 
